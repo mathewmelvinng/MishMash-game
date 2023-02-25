@@ -134,6 +134,8 @@ GameObject:
   - component: {fileID: 14562821}
   - component: {fileID: 14562822}
   - component: {fileID: 14562823}
+  - component: {fileID: 14562825}
+  - component: {fileID: 14562824}
   m_Layer: 0
   m_Name: Viking
   m_TagString: Untagged
@@ -149,7 +151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 14562820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.92, y: -2.88, z: 0}
+  m_LocalPosition: {x: -4.92, y: -1.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -179,7 +181,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &14562823
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -206,6 +208,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.84, y: 1.83}
   m_EdgeRadius: 0
+--- !u!114 &14562824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14562820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 138fd2e920d078b4e91dd96ddeec6354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _walkSpeed: 7
+--- !u!114 &14562825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14562820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fee33ff6a260347a8709d193fb7748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &45911563
 GameObject:
   m_ObjectHideFlags: 0
